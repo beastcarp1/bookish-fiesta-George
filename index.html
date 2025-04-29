@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hayden's Hyperfixation Log</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">🦦</a> <!-- Your Logo or Initials -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <span class="navbar-text">Hayden's Hyperfixation Log</span> <!-- Page Title -->
+        </li>
+      </ul>
+
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <button class="btn btn-light" id="loginButton" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Resources
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="https://github.com/beastcarp1" target="GitHub Profile">GitHub Profile</a></li>
+            <li><a class="dropdown-item" href="https://beastcarp1.github.io/bookish-fiesta-George/" target="GitHub Repo">GitHub Repo</a></li>
+            <li><a class="dropdown-item" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbeastcarp1.github.io%2Fbookish-fiesta-George%2F" target="HTML Validator">HTML Validator Results</a></li>
+            <li><a class="dropdown-item" href="https://wave.webaim.org/report#/https://beastcarp1.github.io/bookish-fiesta-George/" target="WAVE Accessibility Report">WAVE Accessibility Report</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="loginForm">
+          <div class="mb-3">
+            <label for="username" class="form-label">Name</label>
+            <input type="text" class="form-control" id="username" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="text-center p-3">Here are some random things that have caught my attention recently</header>
+
+<div class="text-center mt-4">
+  <h1>Hayden's Hyperfixation Log 🦭</h1>
+  <p>This is a list of my current hyperfixations
+    <a href="https://una.edu/" target="_blank">UNA</a>
+  </p>
+</div>
+
+<!-- Input New Hyperfixation -->
+<form class="text-center my-4">
+  <label for="hyperfixation">New Hyperfixation:</label><br>
+  <input type="text" id="hyperfixation" name="hyperfixation" value=""><br><br>
+  <button id="saveHyperfixation" type="button" class="btn btn-primary">Save Hyperfixation</button>
+</form>
+
+<!-- List of saved Hyperfixations -->
+<ul class="list-group text-center">
+  <li class="list-group-item" id="firstLog">Jewelry making</li>
+  <li class="list-group-item" id="secondFavorite">Phones</li>
+  <li class="list-group-item" id="third">Coding</li>
+  <li class="list-group-item" id="IV">Music</li>
+</ul>
+
+<div class="text-center mt-3">
+  Link to the <a href="https://codepen.io/beastcarp1/pen/emOrPVW" target="_blank">original CodePen</a>
+</div>
+
+<footer class="text-center p-3 mt-4">
+  This list is updated whenever a new Hyperfixation is discovered — so enjoy :)
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script> <!-- This line includes bootstrap.bundle.min.js -->
+<script src="./script.js"></script>
+
+</body>
+</html>
